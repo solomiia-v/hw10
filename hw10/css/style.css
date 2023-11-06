@@ -1,0 +1,49 @@
+@import url("resset.css");
+
+.header {
+    background: orchid;
+    padding: 20px 0;
+}
+.header_list {
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.header_list li {
+    text-transform: uppercase;
+    background-color: lavender;
+    position: relative;
+}
+.header_list li a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 25px;
+    display: block;
+    white-space: nowrap;
+
+}
+.header_second_list {
+    position:absolute ;
+    top: 100%;
+    left: 0;
+    background-color: lightcoral;
+    padding-top: 20px;
+    display: none;
+}
+.header_list li:hover .header_second_list {
+    display: block;
+}
+.header_second_list li {
+    background-color: crimson;
+}
+.header_third_list {
+    position:absolute ;
+    top: 100%;
+    right: 220px;
+    display: none;
+}
+.header_second_list li:hover .header_third_list {
+    display: block;
+}
